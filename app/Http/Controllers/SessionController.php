@@ -33,7 +33,7 @@ class SessionController extends Controller
         if (Auth::attempt($infologin)) {
             return redirect('siswa')->with('success', 'Berhasil login');
         } else {
-            return redirect('sesi')->withErrors('Username dan password yang dimasukkan tidak valid');
+            return redirect('sesi')->withErrors('Username atau password yang dimasukkan tidak valid');
         }
     }
 
@@ -79,7 +79,7 @@ class SessionController extends Controller
         if (Auth::attempt($infologin)) {
             return redirect('siswa')->with('success', Auth::user()->name . ' Berhasil login');
         } else {
-            return redirect('sesi')->withErrors('Username dan password yang dimasukkan tidak valid');
+            return redirect('sesi')->withErrors('Username atau password yang dimasukkan tidak valid');
         }
     }
 }

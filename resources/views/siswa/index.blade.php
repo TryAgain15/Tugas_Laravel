@@ -6,7 +6,7 @@
         <thead>
             <tr>
                 <th>Foto</th>
-                <th>NIM</th>
+                <th>Nomor Induk</th>
                 <th>Nama</th>
                 <th>Alamat</th>
                 <th>Aksi</th>
